@@ -1,64 +1,53 @@
 # Spriting
+Spriting is the "artistic" aspect of making a mod: giving your creations pretty pictures instead of the "oh no" error. Sprites are the images that you use when modding, and is part of what can make your project look presentable for other players.
 
-Spriting is an essential part of Mindustry modding; anything you have made would appear as an "oh no" image without it.
+The general standard for mods is to closely match the way that sprites are drawn in vanilla Mindustry itself - the vanilla sprites are available [here](https://github.com/Anuken/Mindustry/tree/master/core/assets-raw/sprites).
 
-The spriting style in Mindustry is simple yet very restrictive; what you can get away with in other games would look out of place in Mindustry.
-
-You can find all the vanilla sprites [here](https://github.com/Anuken/Mindustry/tree/master/core/assets-raw/sprites).
-
-**Please note that using other modder's sprites without their permission is highly discouraged, though it is allowed to be used as inspiration or reference.**
-
-**Reasoning such as "The mod is open-source, I can do whatever I want with it," and something similar will not be acknowledged nor tolerated and, if found out, would lead your mod to be blacklisted from the mod browser**
+**Please note that using other modder's sprites without their permission is absolutely discouraged, though it is allowed to be used as inspiration or reference with credit. Excuses such as "the mod is open-source" or similar reasons will not be recognised and will lead your mod to be blacklisted from the mod browser.**
 
 ## **Spriting Software**
-It is highly recommended that you use spriting software that supports transparency and exporting images in `.PNG` format. Below there is the recommendation for such.
+The first step to making your sprites is to choose a software. Many exist out there, but the most useful for Mindustry are those that can export as a .png, the default image type used. Below are some recommendations:
 
 ### **Desktop**
 
   1. **[Aseprite](https://www.aseprite.org/)**
-    - The gold standard has a bit of a learning curve, but it is very simple once you get used to it. 
-    - It is a **paid** software, but you can get it for free if you **[compile the source code on your own](https://github.com/aseprite/aseprite/blob/main/INSTALL.md#compiling)**.
-      - Has many features useful for mindustry spriting such as:
+      - Aseprite is considered the gold standard for pixel editing: it's simple yet has very useful features for any pixel art project.
+      - It is a **paid** software, but you can get it for free if you **[compile the source code on your own](https://github.com/aseprite/aseprite/blob/main/INSTALL.md#compiling)**.
+      - Aseprite's major tools include:
          - Mirroring
          - Pallete Control
          - Animation
          - Layering (Can also export individual layers)
   
   2. **[LibreSprite](https://libresprite.github.io/#!/)**
-      - A copy of the Aseprite repository, not as up-to-date or as powerful as the original one, though you would not need it for spriting in mindustry style anyway.
+        - LibreSprite is an older copy of the Aseprite repository. Although it is not as powerful, it has enough features for Mindustry's simplistic spriting style.
   
   3. **[Piskel](https://www.piskelapp.com/)**
-      - A straightforward pixel art software that is not as powerful as Aseprite or LibreSprite, but it is sufficient. There is an online version & an offline downloadable version. Both versions have the same feature.
-      - Cannot export individual layers
+        - Piskel is a free-to-use online pixel editor, again with enough functions to make good Mindustry sprites. It has two versions, one for a browser and one for a client, making it easy to work on sprites when using other devices.
+        - Piskel's only downside is that it cannot export individual layers, which will require a work-around if making multi-layered blocks.
 
   4. **[Pixilart](https://www.pixilart.com/)**
-      - An online spriting tool that has more features than piskel though it lacks a mirror tool. If you're more familiar with pixilart, use this over piskel.
-      - Pretty bloated for spriting in Mindustry style.
+        - Like Piskel, Pixilart is an online spriting tool, this time having more features in exchange for having no mirroring.
 
   5. **[Paint.NET](https://www.getpaint.net/)**
-      - Very basic painting software, not to be confused with Paint 3D, Paint&#46;NET is usable but not as convenient as the above mentioned.
-      - Paint&#46;NET lacks basic features used for spriting in mindustry style. However, you can get some of these missing features with plugins that you can install manually.
-      - That said, it is not recommended to use this for the sake of convenience. If you can download Paint&#46;NET, pretty darn sure you can download Piskel and LibreSprite, which is a specialized Pixel Art software.
+      - Paint.NET is a very rudimentary painting software. It lacks features convenient for Mindustry-style spriting and requires manually-installed plugins to unlock its full potential.
+      - If you can run Paint.NET, you can also most likely run either Piskel or Pixilart.
 
 ### **Mobile**
 1. **[Novix Pixel Editor](https://play.google.com/store/apps/details?id=io.anuke.novix)**
-     - Old and reliable, made and abandoned by Anuke, it is simple, has no ads, though a bit old, it is still reliable as a spriting tool for mobile users, also has mirror feature.
-     - Occasionally breaks if spriting a larger sprite.
+     - Novix Pixel Editor is an archived pixel editor by Anuken. It is simple, reliable and add-free, but may suffer from bugs when dealing with larger images.
   
 2.  **[Pixel Studio](https://play.google.com/store/apps/details?id=com.PixelStudio)**
-    - One of the most popular pixel art software.
-    - Has mostly all the features you need and it can link with its PC version also.
-    - Has ads
+    - Pixel Studio is one of the most popular mobile pixel art options. Although it has ads, it has basically all the features you need for any sprite and can also be linked with its desktop version.
 
 3. **[Ibispaint X](https://play.google.com/store/apps/details?id=jp.ne.ibis.ibispaintx.app)**
-    - Usually not used for spriting, and requires some settings before use.
-    - Supports various tools like octal mirrors, bloom, and gradients, as well as fundamental features like region select and layers.
-    - Can be used to sprite complex sprites at ease, but could be bloated for simple sprites. 
-    - Also has ads
+    - Ibispaint X is a widely-used drawing application for mobile, but requires set-up for pixel art. Like pixel studio, it has ads.
+    - Ibispaint X has features such as an octal mirror, which can make it great for spriting symmetrical factory blocks.
+    - It can also be used for very complex sprites.
 
-## **Size**
+## **Sizes**
 ### Blocks 
-The smallest block size you could make is `32px × 32px`, which is a 1×1 block. Making bigger blocks means increasing the sprite size by an additional `32px`, so a 2×2 block is `64 × 64`, and so on. This applies to both turrets and blocks.
+Blocks generally exist in squares with whole number side lengths. Generally, each tile of a block is `32x32px` and scales up depending on size, the most common dimensions being:
 
 - `1×1` : `32px × 32px`
 - `2×2` : `64px × 64px`
@@ -66,16 +55,16 @@ The smallest block size you could make is `32px × 32px`, which is a 1×1 block.
 - `4×4` : `128px × 128px`
 - `5×5` : `160px × 160px`
 
-However, you are not limited to those options; the game will still load sprites bigger or smaller than the block you have assigned it for, which can result in a unique-looking sprite, or an atrocity.
+Keep in mind however that the game loads sprites that do not fit these exact sizes. Make sure you load your sprites in-game to see for yourself if it looks atrocious or not.
 
-### Items, Liquid, Statuses
-For these content types, the minimum sprite size is `32px`; you can use larger images, but the game will squish them down to `32px`. The game will not enlarge smaller images, so `32px` is the minimum.
+### Items, Liquids and Status Effects
+These content types have icon-sized sprites that are automatically squished to `32x32px`, but will not be expanded to if the image file is smaller.
 
 ### Units
-Unit sprite sizes are more lenient than others, though try not to go below `48px`. The bigger your units are, the more you will have to adjust their `hitSize`.
+As units can vary by size depending on the mod, they can have any dimensions. As a guide, the unit itself should not go below `48px` as details may be hard to see.
 
 ## **Storing Sprites**
-Sprites can be dropped in the `sprites/` subdirectory. The content parser will look through it recursively. 
+Sprites must be dropped in the `sprites/` subdirectory of your mod, where the content parser will look through it recursively. 
 
 Images are packed into "atlas" for efficient rendering. The first directory in sprites/, e.g., `sprites/blocks`, determines the page in this atlas that sprites are put in. Putting a block's sprite in the units page is likely to cause lots of lag; thus, you should try to organize things similarly to how the vanilla game does.
 
